@@ -1,2 +1,3 @@
-# pyclics-louvain
-Louvain clustering for CLICS²
+# pyclics-clustering
+
+Various clustering algoriths packaged as plugins for CLICS².
