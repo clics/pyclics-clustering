@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='pyclics-louvain',
+    name='pyclics-clustering',
     version='0.1',
-    description="",
+    description="clustering algorithms for CLICS networks",
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',
     author='Johann-Mattis List and Robert Forkel',
     author_email='clics@shh.mpg.de',
-    url='https://github.com/clics/pyclics-louvain',
+    url='https://github.com/clics/pyclics-clustering',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
@@ -25,9 +25,25 @@ setup(
     python_requires='>=3.5',
     install_requires=[
         'python-louvain',
+        'networkx',
         'pyclics',
     ],
+    extras_require={
+        'dev': [
+            'tox',
+            'flake8',
+            'wheel',
+            'twine',
+        ],
+        'test': [
+            'mock',
+            'pytest>=3.6',
+            'pytest-mock',
+            'pytest-cov',
+            'coverage>=4.2',
+        ],
+    },
     entry_points={
-        'clics.plugin': ['pyclics=pyclics_louvain:includeme'],
+        'clics.plugin': ['clustering=pyclics_clustering:includeme'],
     },
 )
