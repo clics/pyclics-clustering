@@ -1,6 +1,10 @@
 # pyclics-clustering
 
-Various clustering algoriths packaged as plugins for CLICS².
+Various clustering algoriths packaged as plugins for CLICS.
+
+[![Build Status](https://travis-ci.org/clics/pyclics-clustering.svg?branch=master)](https://travis-ci.org/clics/pyclics-clustering)
+[![codecov](https://codecov.io/gh/clics/pyclics-clustering/branch/master/graph/badge.svg)](https://codecov.io/gh/clics/pyclics-clustering)
+[![PyPI](https://img.shields.io/pypi/v/pyclics-clustering.svg)](https://pypi.org/project/pyclics-clustering)
 
 
 ## Connected Components

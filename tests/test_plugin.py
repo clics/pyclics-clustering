@@ -1,8 +1,8 @@
-from pyclics_clustering import louvain, hlc, label_propagation, connected_components
+from pyclics_clustering import louvain, hlc, labelpropagation, connectedcomponents
 
 
 def test_connected_components(graph):
-    res = list(connected_components(graph, {}))
+    res = list(connectedcomponents(graph, {}))
     assert isinstance(res[0], list)
     assert max(map(len, res)) > 1
 
@@ -14,7 +14,7 @@ def test_louvain(graph):
 
 
 def test_label_propagation(graph):
-    res = list(label_propagation(graph, {}))
+    res = list(labelpropagation(graph, {}))
     assert isinstance(res[0], list)
     assert max(map(len, res)) > 1
 
