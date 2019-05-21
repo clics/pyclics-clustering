@@ -12,12 +12,12 @@ def louvain(graph, kw):
         yield [nodes for nodes in partition.keys() if partition[nodes] == com]
 
 
-def connected_components(graph, kw):
+def connectedcomponents(graph, kw):
     for com in networkx.algorithms.components.connected.connected_components(graph):
         yield list(com)
 
 
-def label_propagation(graph, kw):
+def labelpropagation(graph, kw):
     for com in networkx.algorithms.community.label_propagation.label_propagation_communities(graph):
         yield list(com)
 
@@ -33,5 +33,5 @@ def hlc(graph, kw):
 def includeme(registry):
     registry.register_clusterer(louvain)
     registry.register_clusterer(hlc)
-    registry.register_clusterer(label_propagation)
-    registry.register_clusterer(connected_components)
+    registry.register_clusterer(labelpropagation)
+    registry.register_clusterer(connectedcomponents)
