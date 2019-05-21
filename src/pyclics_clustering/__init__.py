@@ -26,8 +26,8 @@ def hlc(graph, kw):
     _graph = networkx2igraph(graph)
     algo = HLC(_graph, min_size=3, weight=kw.pop('weight', 'FamilyWeight'))
     algo.run()
-    for community in algo.run():
-        yield [i for i in _graph.vs[community]["Name"]]
+    for _community in algo.run():
+        yield [i for i in _graph.vs[_community]["Name"]]
 
 
 def includeme(registry):

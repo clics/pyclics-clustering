@@ -105,7 +105,7 @@ class EdgeCluster(object):
         m, n = len(self.edges), len(self.vertices)
         if n <= 2:
             return 0.
-        return m * (m-n+1) / (n-2) / (n-1)
+        return m * (m - n + 1) / (n - 2) / (n - 1)
 
     def merge_from(self, other):
         """Merges another group of edges into this one, updating
@@ -125,7 +125,7 @@ class EdgeClustering(object):
     def __init__(self, edgelist):
         """Constructs an initial edge clustering of the given graph
         where each edge belongs to its own cluster.
-        
+
         The graph is given by its edge list in the `edgelist`
         parameter."""
         self.clusters = [EdgeCluster(edge, (i, ))

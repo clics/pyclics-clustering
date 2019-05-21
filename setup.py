@@ -17,6 +17,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
@@ -26,7 +27,7 @@ setup(
     install_requires=[
         'python-louvain',
         'networkx',
-        'pyclics',
+        'pyclics>=2.0.0',
     ],
     extras_require={
         'dev': [
