@@ -7,6 +7,11 @@ Various clustering algoriths packaged as plugins for CLICS.
 [![PyPI](https://img.shields.io/pypi/v/pyclics-clustering.svg)](https://pypi.org/project/pyclics-clustering)
 
 
+## Install
+
+Note: Due to a mis-specified dependency (see #3), `pyclics` must be installed prior to installing `pyclics-clustering`.
+
+
 ## Connected Components
 
 As implemented in the [`networkx` package](https://networkx.github.io/documentation/networkx-1.10/reference/generated/networkx.algorithms.components.connected.connected_components.html).
