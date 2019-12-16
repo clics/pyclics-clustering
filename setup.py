@@ -27,7 +27,7 @@ setup(
     install_requires=[
         'attrs>=18.2',
         'python-louvain',
-        'networkx',
+        'networkx==2.1',
         'pyclics>=2.0.0',
     ],
     extras_require={
